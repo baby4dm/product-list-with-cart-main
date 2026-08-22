@@ -1,3 +1,67 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@layer base {
+  dialog {
+    max-width: none;
+    max-height: none;
+  }
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+@theme {
+  /* =========================
+     Colors
+     ========================= */
+
+  --color-red: #c73b0f;
+
+  --color-rose-900: #260f08;
+  --color-rose-500: #87635a;
+  --color-rose-400: #ad8a85;
+  --color-rose-300: #caafa7;
+  --color-rose-100: #f5eeec;
+  --color-rose-50: #fcf8f6;
+
+  --color-green: #1ea575;
+
+  --color-black: #000000;
+  --color-white: #ffffff;
+
+  /* =========================
+     Typography
+     ========================= */
+
+  --font-red-hat: "Red Hat Text", sans-serif;
+
+  --text-preset-1: 40px;
+  --text-preset-1--line-height: 120%;
+  --text-preset-1--font-weight: 700;
+
+  --text-preset-2: 24px;
+  --text-preset-2--line-height: 125%;
+  --text-preset-2--font-weight: 700;
+
+  --text-preset-3: 16px;
+  --text-preset-3--line-height: 150%;
+  --text-preset-3--font-weight: 600;
+
+  --text-preset-4: 14px;
+  --text-preset-4--line-height: 150%;
+  --text-preset-4--font-weight: 400;
+
+  --text-preset-4-bold: 14px;
+  --text-preset-4-bold--line-height: 150%;
+  --text-preset-4-bold--font-weight: 600;
+}
+
+@layer components {
+  .overlay-button-center {
+    @apply absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2;
+  }
+
+  .button-shape {
+    @apply flex items-center w-36 h-11 rounded-full;
+  }
+}
