@@ -21,7 +21,7 @@ export default function Cart() {
         </p>
       </div>
       <div className="bg-rose-50 rounded-lg p-4 flex items-center gap-2 justify-center">
-        <img src="/images/icon-carbon-neutral.svg" />
+        <img src="./images/icon-carbon-neutral.svg" />
         <p className="text-preset-4 text-rose-900">
           This is <span className="text-preset-4-bold">carbon-neutral</span>{" "}
           delivery

@@ -5,11 +5,11 @@ export default function Quantity({ children, className, onAdd, onRemove }) {
     <button className={`button-shape  bg-red text-white ${className}`}>
       <CountButton
         onClick={onRemove}
-        img="/images/icon-decrement-quantity.svg"
+        img="./images/icon-decrement-quantity.svg"
         decrease
       />
       <p className="text-preset-4-bold">{children}</p>
-      <CountButton onClick={onAdd} img="/images/icon-increment-quantity.svg" />
+      <CountButton onClick={onAdd} img="./images/icon-increment-quantity.svg" />
     </button>
   );
 }

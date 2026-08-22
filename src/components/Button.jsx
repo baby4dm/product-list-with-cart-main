@@ -7,7 +7,7 @@ export default function Button({ children, className, onAdd, ...props }) {
     >
       <img
         className="w-5 h-5"
-        src="/images/icon-add-to-cart.svg"
+        src="./images/icon-add-to-cart.svg"
         alt="Add to Cart"
       />
       <p className="text-preset-4-bold">{children}</p>

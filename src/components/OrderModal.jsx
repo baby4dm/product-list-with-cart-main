@@ -36,7 +36,7 @@ export default function OrderModal() {
     >
       <div className="flex flex-col gap-8 py-10 px-6 overflow-y-auto max-h-[90vh]">
         <div className="flex flex-col gap-6">
-          <img className="h-12 w-12" src="/images/icon-order-confirmed.svg" />
+          <img className="h-12 w-12" src="./images/icon-order-confirmed.svg" />
           <div>
             <h1 className="text-preset-1 text-rose-900">Order Confirmed</h1>
             <p className="text-preset-3 text-rose-500">
