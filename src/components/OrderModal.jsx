@@ -59,7 +59,7 @@ export default function OrderModal() {
         </div>
         <button
           onClick={handleStartNewOrder}
-          className="bg-red h-13.25 rounded-full text-preset-3 text-white shrink-0 hover:bg-amber-700 transition-colors cursor-pointer"
+          className="bg-red h-13.25 rounded-full text-preset-3 text-white shrink-0 hover:bg-[#952C0B] transition-colors cursor-pointer"
         >
           Start New Order
         </button>

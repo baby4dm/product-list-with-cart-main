@@ -19,9 +19,17 @@ export default function CartItem({ item }) {
       </div>
       <button
         onClick={() => removeFromCart(item.name)}
-        className="w-5 h-5 border-2 border-rose-400 rounded-full flex items-center justify-center hover:scale-110 cursor-pointer"
+        className="group w-5 h-5 border-2 border-rose-400 rounded-full flex items-center justify-center hover:scale-110 hover:border-rose-900 cursor-pointer"
       >
-        <img src="./images/icon-remove-item.svg" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="10"
+          height="10"
+          viewBox="0 0 10 10"
+          className="fill-rose-400 group-hover:fill-rose-900"
+        >
+          <path d="M8.375 9.375 5 6 1.625 9.375l-1-1L4 5 .625 1.625l1-1L5 4 8.375.625l1 1L6 5l3.375 3.375-1 1Z" />
+        </svg>
       </button>
     </li>
   );

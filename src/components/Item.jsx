@@ -38,7 +38,7 @@ export default function Item({ image, category, name, price }) {
         ) : (
           <Button
             onAdd={handleAdd}
-            className="overlay-button-center  justify-evenly hover:bg-rose-100 transition-colors"
+            className="overlay-button-center  justify-evenly hover:text-red hover:border-red transition-colors"
           >
             Add to Cart
           </Button>
